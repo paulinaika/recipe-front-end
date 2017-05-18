@@ -17,7 +17,7 @@ class App extends Component {
   };
 
   getIngredientList() {
-    const URL = 'http://yamagucci.herokuapp.com/api/ingredients?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNob3VoZWkueWFtYXVjaGlAbGl2ZS5jb20iLCJpYXQiOjE0OTQ5OTMxMTV9.G0ctQghRRAqaZiGSZyT5Oi-YXUUfb3UsYQpsmMaVA0k'
+    const URL = 'http://mongo-crudient.herokuapp.com/api?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdWxpbmFAZ21haWwuY29tIiwiaWF0IjoxNDk1MDg1NDkyfQ.RbgIYSrTWDvwzbWNa4AfpUpLsFiFmD8aF0Dda60EpIM'
     axios.get(URL)
       .then((response) => {
         this.setState({ ingredients: response.data });
